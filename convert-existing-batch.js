@@ -18,8 +18,8 @@ AWS.config.update({
   }
 });
 
-const S3 = new AWS.S3({ region: 'eu-west-2' });
-const bucket = 'media.a1sportingmemorabilia.co.uk';
+const S3 = new AWS.S3({ region: 'YOUR_S3_BUCKET_REGION' });
+const bucket = 'YOUR_BUCKET_NAME';
 
 // CLI options
 const EXCLUDE_PREFIXES = args.exclude ? args.exclude.split(',').map(p => p.trim().replace(/\/?$/, '/')) : [];
